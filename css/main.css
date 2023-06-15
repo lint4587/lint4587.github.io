@@ -1,0 +1,972 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@200&family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+:root {
+    --bs-breakpoint-xs: 0;
+    --bs-breakpoint-sm: 576px;
+    --bs-breakpoint-md: 768px;
+    --bs-breakpoint-lg: 992px;
+    --bs-breakpoint-xl: 1200px;
+    --bs-breakpoint-xxl: 1400px;
+}
+
+/* header區 */
+/* 共用區 */
+img {
+    display: block;
+}
+
+body {
+    font-family: 'Noto Sans TC';
+
+}
+
+a {
+    text-decoration: none;
+}
+
+main>* {
+    /* 設定<main>第一層的所有元素 */
+
+    width: 100%;
+}
+
+/* header區 */
+#topbar {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #164101;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 999;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+#topbar .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#topbar .link {
+    display: block;
+    padding: 12px 16px 16px 16px;
+
+    font-size: 18px;
+    color: white;
+    font-weight: 200;
+    transition: all .3s;
+}
+
+#topbar .link_dona {
+    display: block;
+    margin: 6px 4px 8px 4px;
+    padding: 6px 12px 8px 12px;
+
+    font-size: 18px;
+    color: white;
+    font-weight: 200;
+    background-color: #649B5B;
+    border-radius: 25px;
+    transition: all .3s;
+}
+
+#topbar .link:hover {
+    color: #a2d3ac;
+}
+
+#topbar .link_dona:hover {
+    background-color: #8db891;
+}
+
+
+/* 頁首 */
+#main_bg {
+    padding-top: 10%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+#main_bg img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* 綠色生活指南布告欄 */
+/* 綠色生活指南 */
+.fa-angle-right {
+    margin-top: 2px;
+    font-size: 12px;
+    color: #000000;
+}
+
+.all_activity_bar {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#green_life {
+    margin-top: 50px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#green_life .green_container {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    background: #009858;
+    border-radius: 61px;
+    max-width: 1336px;
+    height: 216px;
+    padding: 40px 26px 40px 90px;
+
+}
+
+
+#green_life .green_title p {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 58px;
+    color: #FFFFFF;
+}
+
+#green_life .green_title span {
+    color: #BAFF9A;
+}
+
+#green_life .mid_line {
+    background-color: #FFFFFF;
+    height: 100%;
+    width: 4px;
+    margin-left: 28px;
+    margin-right: 28px;
+}
+
+#green_life .green_text_all {
+    padding-top: 10px;
+    display: flex;
+}
+
+#green_life .green_text {
+    max-width: 450px;
+    color: #FFFFFF;
+    font-weight: 400;
+    margin-right: 30px;
+}
+
+#green_life .green_text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#green_life .green_text p {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.green_life_href {
+    margin-right: 30px;
+    padding-top: 50px;
+    min-width: 93px;
+}
+
+.green_life_href p {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    margin-right: 4px;
+}
+
+.green_life_href::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #FFFFFF;
+    transition: .35s;
+
+}
+
+.green_life_href:hover::after {
+    width: 100%;
+}
+
+
+#green_life .green_img {
+    background-image: url('../image/greenlife_1.png');
+    min-width: 280px;
+    height: 300px;
+    background-size: 100% 100%;
+}
+
+
+@media (max-width:992px) {
+    #green_life .green_img {
+        display: none;
+    }
+
+    .green_life_href {
+        min-width: 93px;
+        max-width: 93px;
+    }
+
+    #green_life .green_container {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width:767px) {
+
+    #green_life .green_text_all {
+        display: block;
+    }
+
+    .green_life_href {
+        padding-top: 0;
+    }
+
+    #green_life .green_text p {
+        display: none;
+    }
+
+    #green_life .green_container {
+        padding: 40px 50px 40px 50px;
+    }
+
+    #green_life .green_text {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 576px) {
+    #green_life .mid_line {
+        display: none;
+    }
+
+    #green_life .green_container {
+        display: block;
+        height: auto;
+    }
+}
+
+/* 本季專案 */
+#green_project {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.green_project1 {
+    display: flex;
+    width: 1362px;
+    height: 66px;
+    border: 1px solid #C5C4C4;
+    box-shadow: 0px 4px 15px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 21px;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 91px;
+}
+
+.green_project_title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    /* identical to box height */
+    color: #000000;
+
+}
+
+.green_project_line {
+    background-color: #000000;
+    width: 4px;
+    height: 100%;
+    margin-left: 46px;
+
+}
+
+.green_project2 {
+    display: flex;
+    justify-content: center;
+}
+
+.green_list_itembox {
+    width: 366.66px;
+    height: 649px;
+    /* border: 2px solid #939393; */
+    box-shadow: 0px 4px 7px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 73px;
+    margin: 0px 50px;
+    padding: 30px;
+}
+
+.list_item_title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 35px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.list_item_text {
+    margin-top: 20px;
+    line-height: 26px;
+    font-size: 18px;
+}
+
+.list_item_p {
+    line-height: 26px;
+    font-size: 16px;
+    text-align: justify;
+    color: #727171;
+}
+
+.greenbox_size {
+    height: 176px;
+    display: flex;
+    justify-content: center;
+}
+
+.greenbox_sizebox {
+    width: 306px;
+    height: 516px;
+    display: flex;
+    flex-direction: column;
+}
+
+.greebox_footer {
+    display: flex;
+    justify-content: center;
+}
+
+/* 標語 */
+#green_box_title {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0.52%, #D9D9D9 97.92%);
+    height: 250px;
+    margin-top: 78px;
+}
+
+.green_box_title_p {
+    display: flex;
+    width: 978px;
+    align-items: center;
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 46px;
+
+    color: #000000;
+}
+
+/* 內文區 */
+#green_main {
+    display: flex;
+    justify-content: center;
+    margin-top: 103px;
+}
+
+
+.green_main_img {
+    background-image: url(../image/green_main_pg1.png);
+    width: 818px;
+    height: 568px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 121px;
+
+}
+
+.green_main_img1 {
+    background-image: url(../image/ocean.png);
+    width: 818px;
+    height: 568px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 121px;
+    background-position: center;
+
+}
+
+.green_main_img2 {
+    background-image: url(../image/tree.jpg);
+    width: 818px;
+    height: 568px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 121px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.green_main_img3 {
+    background-image: url(../image/Polarbear.jpg);
+    width: 818px;
+    height: 568px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 121px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.green_main_p {
+    display: flex;
+    padding-left: 49px;
+    flex-direction: column;
+}
+
+.green_main_line {
+    width: 100%;
+    height: 4px;
+    background-color: #000000;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.green_main_p1 {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 52px;
+    color: #000000;
+}
+
+.green_main_p2 {
+    width: 248px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+
+    color: #000000;
+}
+
+.green_main_p3 {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    padding-top: 9px;
+    /* 文案小內文 */
+    width: 466px;
+    color: #727171;
+}
+
+.green_main_a {
+    color: #000000;
+    width: 183px;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #000000;
+    margin-top: 20px;
+}
+
+.green_main_a:hover {
+opacity: 0.5;
+    transition: .5s ease;
+}
+
+.green_main_a1 {
+    display: flex;
+    align-items: center;
+    padding: 13.5px;
+}
+
+.green_main_icon {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+}
+
+/* 內文相反區 */
+#green_main2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 103px;
+    flex-direction: row-reverse;
+}
+
+.green_main_p_2 {
+    display: flex;
+    padding-right: 49px;
+    flex-direction: column;
+}
+
+.list_item {
+    background: rgba(217, 217, 217, 0.4);
+}
+
+/* 頁尾議題區 */
+.list_button_1 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+#bg3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-image: url('../image/bg1.png');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.title_pg3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.title_pg3 p {
+    font-size: 48px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.border_0 {
+    margin-left: 6%;
+    margin-top: 186px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.border_01 {
+
+    border-left: 18px solid #8DBA78;
+    padding-left: 1.5%;
+    max-width: 436px;
+    height: 30px;
+}
+
+.border_01 {
+    font-size: 24px;
+}
+
+.border_02 {
+    display: flex;
+    border-bottom: 2px solid #8DBA78;
+    width: 20%;
+    margin-left: 2.5%;
+}
+
+
+.list_box_1 {
+    display: flex;
+    margin: 4%;
+    max-width: 100%;
+    justify-content: center;
+
+}
+
+.list_item_1 {
+    width: 350px;
+    background: rgba(217, 217, 217, 0.4);
+    border-radius: 28px;
+    overflow: hidden;
+    margin: 2%;
+    line-height: 1.5rem;
+    padding: 0 30px;
+
+}
+
+.list_item_img {
+    height: 176px;
+    display: flex;
+    justify-content: center;
+}
+
+.list_item_img img {
+    background-position: center;
+    text-align: center;
+}
+
+.list_item_p_1 {
+    text-align: center;
+    font-size: 18px;
+    color: #8DBA78;
+    margin: 10px 0;
+}
+
+.list_item_1 span {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    color: #727171;
+    text-align: justify;
+    margin: 20px 0;
+}
+
+.list_item_p1 {
+    padding-bottom: 10px;
+    font-size: 14px;
+    color: #727171;
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width:1000px) {
+    .list_item_1:nth-child(n+4) {
+        display: none;
+    }
+
+    .green_list_itembox:nth-child(n+4) {
+        display: none;
+    }
+
+    #green_life .green_img {
+        background-image: none;
+    }
+}
+
+
+.list_item_text {
+    width: 100%;
+    padding-top: 5px;
+}
+
+/* 頁尾區 */
+#footer_g {
+    position: relative;
+    width: 100%;
+    background-color: #CBDEC0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+
+.icon {
+    display: flex;
+
+}
+
+.footer_p {
+    right: 47%;
+    /* position: relative; */
+    position: absolute;
+    /* text-align: center; */
+    display: flex;
+    /* margin: 10%; */
+    /* top: 1px; */
+    /* left: 50%; */
+    /* bottom: 0;*/
+
+}
+
+/* 輪播 */
+.link {
+    display: flex;
+    padding: 10px;
+}
+
+.list_item_p_t {
+    text-align: center;
+    font-size: 18px;
+    color: #8DBA78;
+    margin: 10px 0;
+}
+
+/* 輪播元素 */
+.list_item {
+    padding: 0 30px;
+    margin-left: 25%;
+}
+
+.list_item_text span {
+    color: #000000;
+}
+
+
+/* RWD */
+@media (max-width:597px) {
+
+    /* 本紀專案 */
+    .green_project2 {
+        flex-direction: column;
+    }
+
+    /* 主頁內容 */
+    .green_main_p,
+    .green_main_p2 {
+        margin: 4%;
+        display: flex;
+        padding-left: 0px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #green_main2 {
+        margin: 4%;
+        flex-wrap: wrap;
+    }
+
+    .green_main_p3 {
+        width: auto;
+    }
+
+    #green_main {
+        flex-wrap: wrap;
+    }
+
+    .green_project1 {
+        width: 70%;
+    }
+
+    /* 頁尾 */
+    .list_box_1 {
+        flex-direction: column;
+    }
+
+    /* 輪播 */
+    .list_item {
+        margin-left: 5%;
+    }
+}
+
+@media (max-width:992px) {
+    .green_life_href {
+        align-items: center;
+    }
+
+    .green_list_itembox {
+        margin: 0px 12px;
+    }
+
+    .green_list_itembox:nth-child(n+3) {
+        display: none;
+    }
+
+    .green_main_img2 {
+        margin-left: 31px;
+    }
+
+    .green_main_p {
+        margin-right: 31px;
+    }
+
+    .green_main_p_2 {
+        margin-left: 31px;
+    }
+
+    .green_main_img3 {
+        margin-right: 29px;
+    }
+
+    .green_main_img1 {
+        margin-right: 31px;
+    }
+
+    .green_main_img {
+        margin-left: 31px;
+    }
+
+    .green_project2 {
+        flex-wrap: wrap;
+    }
+
+}
+
+/* 動畫效果分頁式 */
+#pagination-container {
+    margin-top: 5%;
+}
+
+.simple-pagination ul {
+    margin: 0 0 20px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.simple-pagination li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.simple-pagination li a,
+.simple-pagination li span {
+    color: #666;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid #EEE;
+    background-color: #FFF;
+    box-shadow: 0px 0px 10px 0px #EEE;
+}
+
+.simple-pagination .current {
+    color: #FFF;
+    background-color: #007F1C;
+    border-color: #007F1C;
+}
+
+.simple-pagination .prev.current,
+.simple-pagination .next.current {
+    background: #007F1C;
+}

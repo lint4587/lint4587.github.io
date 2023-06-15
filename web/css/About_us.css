@@ -1,0 +1,1063 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Noto Sans TC', sans-serif;
+    background-color: #F0F9ED;
+
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 共用 */
+a {
+    text-decoration: none;
+}
+
+/* header區 */
+#topbar {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #164101;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 999;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+#topbar .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#topbar .link {
+    display: block;
+    padding: 12px 16px 16px 16px;
+
+    font-size: 18px;
+    color: white;
+    font-weight: 200;
+    transition: all .3s;
+}
+
+#topbar .link_dona {
+    display: block;
+    margin: 6px 4px 8px 4px;
+    padding: 6px 12px 8px 12px;
+
+    font-size: 18px;
+    color: white;
+    font-weight: 200;
+    background-color: #649B5B;
+    border-radius: 25px;
+    transition: all .3s;
+}
+
+#topbar .link:hover {
+    color: #a2d3ac;
+}
+
+#topbar .link_dona:hover {
+    background-color: #8db891;
+}
+
+/* 關於我們 */
+
+
+#about_us {
+    min-height:calc(100vh - 167px);
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 120px;
+}
+
+.about_container {
+    display: flex;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 關於綠色傳播 */
+
+.text_content {
+    display: flex;
+    flex-direction: column;
+    max-width: 596px;
+    width: 100%;
+    padding: 30px 0 30px 0;
+    margin: auto;
+}
+
+.introduction_column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #6e6e6e;
+    padding: 30px 42px;
+}
+
+
+.introduction_column .mid_line {
+    height: 100%;
+    width: 1px;
+    background-color: #000000;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.text_content .text_title p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #000000;
+}
+
+.text_content .text p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+/* 理想與目標 */
+#tabs-2 .text_content p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+/* JS UI */
+#tabs {
+    background: none;
+    border: none;
+    width: 100%;
+    flex: 2;
+    max-width: 776px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tabs ul {
+    display: flex;
+    width: 100%;
+}
+
+.text_content {
+    animation: fade 0.2s linear;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+#tabs .about_green_communication {
+    flex: 1;
+    border: 5px solid #007F1C;
+    border-radius: 50px 0px 0px 50px;
+    padding: 22px 0px;
+    padding: 0;
+
+
+}
+
+#tabs .ideals_and_goals {
+    flex: 1;
+    border: 5px solid #007F1C;
+    border-radius: 0px 50px 50px 0px;
+    padding: 22px 0px;
+    padding: 0;
+
+
+}
+
+#tabs a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 78px;
+}
+
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+    border: none;
+    background: none;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+    border: none;
+    background: #007F1C;
+}
+
+.ui-widget-header {
+    border: none;
+    background: none;
+}
+
+.ui-widget {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1em;
+}
+
+.ui-tabs .ui-tabs-panel {
+    width: 100%;
+    display: flex;
+
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    padding: 0;
+}
+
+.ui-tabs .ui-tabs-nav li {
+    margin: 0;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+    margin-bottom: 0;
+}
+
+/* 相片 */
+
+#picture {
+    flex: 1;
+    height: 500px;
+    margin-bottom: 150px;
+}
+
+.photo_all {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.photo_frame {
+    position: absolute;
+    max-width: 70%;
+    height: 270px;
+    background-color: #FFFFFF;
+    padding: 10px;
+    margin-bottom: -220px;
+
+
+}
+
+#picture figure {
+    height: 100%;
+    border-radius: 32px;
+    overflow: hidden;
+}
+
+#picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photo_1 {
+    z-index: 1;
+    left: 120px;
+    top: 0px;
+    animation-name: carousel_1;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+}
+
+.photo_2 {
+    z-index: 2;
+    left: 80px;
+    top: 40px;
+    animation-name: carousel_2;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+}
+
+.photo_3 {
+    z-index: 3;
+    left: 40px;
+    top: 80px;
+    animation-name: carousel_3;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+}
+
+.photo_4 {
+    z-index: 4;
+    left: 0px;
+    top: 120px;
+    animation-name: carousel_4;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+
+}
+
+@keyframes carousel_1 {
+    20% {
+        z-index: 1;
+        left: 120px;
+        top: 0px;
+    }
+
+    25% {
+        z-index: 2;
+        left: 80px;
+        top: 40px;
+    }
+
+    45% {
+        z-index: 2;
+        left: 80px;
+        top: 40px;
+    }
+
+    50% {
+        z-index: 3;
+        left: 40px;
+        top: 80px;
+    }
+
+    70% {
+        z-index: 3;
+        left: 40px;
+        top: 80px;
+    }
+
+    75% {
+        z-index: 4;
+        left: 0px;
+        top: 120px;
+    }
+
+    95% {
+        z-index: 4;
+        left: 0px;
+        top: 120px;
+        opacity: 1;
+    }
+
+    97% {
+        z-index: 4;
+        left: -20px;
+        top: 140px;
+        opacity: 0;
+    }
+
+    98% {
+        z-index: 1;
+        left: 140px;
+        top: -20px;
+        opacity: 0;
+    }
+
+    100% {
+        z-index: 1;
+        left: 120px;
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes carousel_2 {
+
+    20% {
+        z-index: 2;
+        left: 80px;
+        top: 40px;
+    }
+
+    25% {
+        z-index: 3;
+        left: 40px;
+        top: 80px;
+    }
+
+    45% {
+        z-index: 3;
+        left: 40px;
+        top: 80px;
+    }
+
+    50% {
+        z-index: 4;
+        left: 0px;
+        top: 120px;
+    }
+
+    70% {
+        z-index: 4;
+        left: 0px;
+        top: 120px;
+        opacity: 1;
+    }
+
+    72% {
+        z-index: 4;
+        left: -20px;
+        top: 140px;
+        opacity: 0;
+    }
+
+    73% {
+        z-index: 1;
+        left: 140px;
+        top: -20px;
+        opacity: 0;
+    }
+
+    75% {
+        z-index: 1;
+        left: 120px;
+        top: 0px;
+        opacity: 1;
+    }
+
+    95% {
+        z-index: 1;
+        left: 120px;
+        top: 0px;
+    }
+
+    100% {
+        z-index: 2;
+        left: 80px;
+        top: 40px;
+    }
+}
+
+@keyframes carousel_3 {
+    20% {
+        z-index: 3;
+        left: 40px;
+        top: 80px;
+    }
+
+    25% {
+        z-index: 4;
+        left: 0px;
+        top: 120px;
+    }
+
+    45% {
+        z-index: 4;
+        left: 0px;
+        top: 120px;
+        opacity: 1;
+    }
+
+    47% {
+        z-index: 4;
+        left: -20px;
+        top: 140px;
+        opacity: 0;
+    }
+
+    48% {
+        z-index: 1;
+        left: 140px;
+        top: -20px;
+        opacity: 0;
+    }
+
+    50% {
+        z-index: 1;
+        left: 120px;
+        top: 0px;
+        opacity: 1;
+    }
+
+    70% {
+        z-index: 1;
+        left: 120px;
+        top: 0px;
+    }
+
+    75% {
+        z-index: 2;
+        left: 80px;
+        top: 40px;
+    }
+
+    95% {
+        z-index: 2;
+        left: 80px;
+        top: 40px;
+    }
+
+    100% {
+        z-index: 3;
+        left: 40px;
+        top: 80px;
+    }
+}
+
+@keyframes carousel_4 {
+    20% {
+        z-index: 4;
+        left: 0px;
+        top: 120px;
+        opacity: 1;
+    }
+
+    22% {
+        z-index: 4;
+        left: -20px;
+        top: 140px;
+        opacity: 0;
+    }
+
+    23% {
+        z-index: 1;
+        left: 140px;
+        top: -20px;
+        opacity: 0;
+    }
+
+    25% {
+        z-index: 1;
+        left: 120px;
+        top: 0px;
+        opacity: 1;
+    }
+
+    45% {
+        z-index: 1;
+        left: 120px;
+        top: 0px;
+    }
+
+    50% {
+        z-index: 2;
+        left: 80px;
+        top: 40px;
+    }
+
+    70% {
+        z-index: 2;
+        left: 80px;
+        top: 40px;
+    }
+
+    75% {
+        z-index: 3;
+        left: 40px;
+        top: 80px;
+    }
+
+    95% {
+        z-index: 3;
+        left: 40px;
+        top: 80px;
+    }
+
+    100% {
+        z-index: 4;
+        left: 0px;
+        top: 120px;
+    }
+}
+
+@keyframes carousel_5 {
+    20% {
+        z-index: 1;
+        left: 120px;
+        top: 0px;
+    }
+
+    25% {
+        z-index: 2;
+        left: 80px;
+        top: 0px;
+    }
+
+    45% {
+        z-index: 2;
+        left: 80px;
+        top: 0px;
+    }
+
+    50% {
+        z-index: 3;
+        left: 40px;
+        top: 0px;
+    }
+
+    70% {
+        z-index: 3;
+        left: 40px;
+        top: 0px;
+    }
+
+    75% {
+        z-index: 4;
+        left: 0px;
+        top: 0px;
+    }
+
+    95% {
+        z-index: 4;
+        left: 0px;
+        top: 0px;
+        opacity: 1;
+    }
+
+    97% {
+        z-index: 4;
+        left: -20px;
+        top: 0px;
+        opacity: 0;
+    }
+
+    98% {
+        z-index: 1;
+        left: 140px;
+        top: -20px;
+        opacity: 0;
+    }
+
+    100% {
+        z-index: 1;
+        left: 120px;
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes carousel_6 {
+
+    20% {
+        z-index: 2;
+        left: 80px;
+        top: 0px;
+    }
+
+    25% {
+        z-index: 3;
+        left: 40px;
+        top: 0px;
+    }
+
+    45% {
+        z-index: 3;
+        left: 40px;
+        top: 0px;
+    }
+
+    50% {
+        z-index: 4;
+        left: 0px;
+        top: 0px;
+    }
+
+    70% {
+        z-index: 4;
+        left: 0px;
+        top: 0px;
+        opacity: 1;
+    }
+
+    72% {
+        z-index: 4;
+        left: -20px;
+        top: 0px;
+        opacity: 0;
+    }
+
+    73% {
+        z-index: 1;
+        left: 140px;
+        top: 0px;
+        opacity: 0;
+    }
+
+    75% {
+        z-index: 1;
+        left: 120px;
+        top: 0px;
+        opacity: 1;
+    }
+
+    95% {
+        z-index: 1;
+        left: 120px;
+        top: 0px;
+    }
+
+    100% {
+        z-index: 2;
+        left: 80px;
+        top: 0px;
+    }
+}
+
+@keyframes carousel_7 {
+    20% {
+        z-index: 3;
+        left: 40px;
+        top: 0px;
+    }
+
+    25% {
+        z-index: 4;
+        left: 0px;
+        top: 0px;
+    }
+
+    45% {
+        z-index: 4;
+        left: 0px;
+        top: 0px;
+        opacity: 1;
+    }
+
+    47% {
+        z-index: 4;
+        left: -20px;
+        top: 0px;
+        opacity: 0;
+    }
+
+    48% {
+        z-index: 1;
+        left: 140px;
+        top: 0px;
+        opacity: 0;
+    }
+
+    50% {
+        z-index: 1;
+        left: 120px;
+        top: 0px;
+        opacity: 1;
+    }
+
+    70% {
+        z-index: 1;
+        left: 120px;
+        top: 0px;
+    }
+
+    75% {
+        z-index: 2;
+        left: 80px;
+        top: 0px;
+    }
+
+    95% {
+        z-index: 2;
+        left: 80px;
+        top: 0px;
+    }
+
+    100% {
+        z-index: 3;
+        left: 40px;
+        top: 0px;
+    }
+}
+
+@keyframes carousel_8 {
+    20% {
+        z-index: 4;
+        left: 0px;
+        top: 0px;
+        opacity: 1;
+    }
+
+    22% {
+        z-index: 4;
+        left: -20px;
+        top: 0px;
+        opacity: 0;
+    }
+
+    23% {
+        z-index: 1;
+        left: 140px;
+        top: 0px;
+        opacity: 0;
+    }
+
+    25% {
+        z-index: 1;
+        left: 120px;
+        top: 0px;
+        opacity: 1;
+    }
+
+    45% {
+        z-index: 1;
+        left: 120px;
+        top: 0px;
+    }
+
+    50% {
+        z-index: 2;
+        left: 80px;
+        top: 0px;
+    }
+
+    70% {
+        z-index: 2;
+        left: 80px;
+        top: 0px;
+    }
+
+    75% {
+        z-index: 3;
+        left: 40px;
+        top: 0px;
+    }
+
+    95% {
+        z-index: 3;
+        left: 40px;
+        top: 0px;
+    }
+
+    100% {
+        z-index: 4;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+
+
+@media (max-width:992px) {
+    .about_container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #picture {
+        display: flex;
+        flex: none;
+        width: 100%;
+        height: 350px;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+
+    .photo_all {
+        width: 560px;
+        height: 100%;
+        margin-left: 80px
+    }
+
+    #about_us {
+        padding-top: 0;
+    }
+
+    .photo_1 {
+        animation-name: carousel_5;
+        top: 0;
+    }
+
+    .photo_2 {
+        animation-name: carousel_6;
+        top: 0;
+    }
+
+    .photo_3 {
+        animation-name: carousel_7;
+        top: 0;
+    }
+
+    .photo_4 {
+        animation-name: carousel_8;
+        top: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .photo_frame {
+        height: 200px;
+    }
+    #picture {
+        height: 300px;
+    }
+    .photo_all {
+        width: 410px;
+        height: 100%;
+        margin-left: 0;
+    }
+}
+
+/* 頁尾區 */
+#footer_g{
+    position: relative;
+    width: 100%;
+    background-color: #CBDEC0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.icon{
+display: flex;
+}
+.footer_p{
+    right: 47%;
+    position: absolute;
+}
+.link{
+    display: flex;
+    padding: 10px;
+}
