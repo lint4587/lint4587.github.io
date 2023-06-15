@@ -337,6 +337,29 @@ a {
 }
 
 
+/* 表單 */
+.form_bar *{
+    display: block;
+}
+.activity_container{
+    max-width: 415px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 24px;
+
+}
+.form_item{
+    margin: 10px 0;
+}
+
+.form_item label{
+    margin-bottom: 10px;
+}
+
+#activity_form h2{
+    font-size: 24px;
+}
+
 /* 頁尾區 */
 #footer_g{
     position: relative;

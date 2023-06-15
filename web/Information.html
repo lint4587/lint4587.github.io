@@ -15,14 +15,14 @@
     <!-- 導覽列 -->
     <header id="topbar">
         <h1 class="logo">
-            <a href="../index.html">
+            <a href="../ProjectWeb/index.html">
                 <img src="./img/logo.svg" alt="傳播綠意">
             </a>
         </h1>
         <nav>
             <ul class="menu">
-                <li><a href="../main.html" class="link"> 聯署行動</a></li>
-                <li><a href="../greenlife.html" class="link"> 綠色生活指南</a></li>
+                <li><a href="../ProjectWeb/main.html" class="link"> 聯署行動</a></li>
+                <li><a href="../ProjectWeb/greenlife.html" class="link"> 綠色生活指南</a></li>
                 <li><a href="./Activity.html" class="link"> 綠色活動</a></li>
                 <li><a href="./About_us.html" class="link"> 關於我們</a></li>
                 <li><a href="./Donation.html" class="link_dona"> 捐款支持</a></li>
@@ -118,14 +118,44 @@
         </nav>
 
     </footer>
-    
 
-    
+    <div id="activity_form">
+        <div class="activity_container">
+            <div>
+                <h2>活動報名</h2>
+            </div>
+            <div class="form_bar">
+                <form name="activity_apply_form" action="" method="post">
+                    <div class="form_item">
+                        <label for="username">姓名：</label>
+                        <input type="text" name="username" id="username" title="請輸入姓名" placeholder="王大明" required
+                            autocomplete="on" autofocus>
+                    </div>
+                    <div class="form_item">
+                        <label for="tel">聯絡電話：</label>
+                        <input type="tel" name="tel" id="tel" title="請輸入電話" placeholder="02-3456789" autocomplete="on">
+                    </div>
+                    <div class="form_item">
+                        <label for="email">Email：</label>
+                        <input type="email" name="email" id="email" title="請輸入Email" placeholder="yourid@email.com"
+                            required autocomplete="on">
+                    </div>
+                    <div class="form_item">
+                        <label for="username">聯絡地址：</label>
+                        <input type="text" name="username" id="username" title="請輸入姓名" placeholder="請輸入地址" required
+                            autocomplete="on" autofocus>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
 
     <!-- jquery -->
-  <script src="./jquery/jquery-1.11.3.min.js"></script>
-  <!-- 自訂 -->
-  <script src="./js/Information.js"></script>
+    <script src="./jquery/jquery-1.11.3.min.js"></script>
+    <!-- 自訂 -->
+    <script src="./js/Information.js"></script>
 
 </body>
 
