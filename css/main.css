@@ -163,26 +163,37 @@ main>* {
 }
 
 /* header區 */
+/* header區 */
 #topbar {
     position: sticky;
     width: 100%;
     top: 0;
     left: 0;
-    background-color: #164101;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     z-index: 999;
 
 }
 
-.logo {
+#topbar nav {
+    position: relative;
+    background-color: #164101;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 997;
+    transition: transform 0.6s;
+}
+
+#topbar .logo {
+    position: relative;
     display: flex;
     justify-content: center;
+    background-color: #164101;
+    z-index: 998;
 }
 
 #topbar .menu {
     display: flex;
     justify-content: center;
     align-items: center;
+
 
 }
 
@@ -215,6 +226,10 @@ main>* {
 
 #topbar .link_dona:hover {
     background-color: #8db891;
+}
+
+.fixed {
+    transform: translateY(0px) !important;
 }
 
 
@@ -621,7 +636,7 @@ main>* {
 }
 
 .green_main_a:hover {
-opacity: 0.5;
+    opacity: 0.5;
     transition: .5s ease;
 }
 
@@ -799,7 +814,7 @@ opacity: 0.5;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 10px;
+    padding: 0px !important;
 }
 
 .icon {
@@ -848,9 +863,6 @@ opacity: 0.5;
 @media (max-width:597px) {
 
     /* 本紀專案 */
-    .green_project2 {
-        flex-direction: column;
-    }
 
     /* 主頁內容 */
     .green_main_p,
@@ -904,7 +916,7 @@ opacity: 0.5;
     }
 
     .green_main_img2 {
-        margin-left: 31px;
+        margin:4%;
     }
 
     .green_main_p {
@@ -924,7 +936,7 @@ opacity: 0.5;
     }
 
     .green_main_img {
-        margin-left: 31px;
+        margin: 4%;
     }
 
     .green_project2 {

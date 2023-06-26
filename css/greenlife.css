@@ -194,26 +194,36 @@ main>* {
 }
 
 /* header區 */
+/* header區 */
 #topbar {
     position: sticky;
     width: 100%;
     top: 0;
     left: 0;
-    background-color: #164101;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     z-index: 999;
 
 }
+#topbar nav{
+    position:relative;
+    background-color: #164101;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 997;
+    transition: transform 0.6s;
+}
 
-.logo {
+#topbar .logo {
+    position:relative;
     display: flex;
     justify-content: center;
+    background-color: #164101;
+    z-index: 998;
 }
 
 #topbar .menu {
     display: flex;
     justify-content: center;
     align-items: center;
+
 
 }
 
@@ -247,6 +257,11 @@ main>* {
 #topbar .link_dona:hover {
     background-color: #8db891;
 }
+
+.fixed {
+    transform: translateY(0px) !important;
+} 
+
 
 
 /* 開頭背景 */
@@ -835,7 +850,7 @@ main>* {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 10px;
+    padding: 0px !important;
 }
 
 .icon {
@@ -880,10 +895,12 @@ main>* {
     .list_item_img {
         background-position: center;
     }
-    .green_bg img{
+
+    .green_bg img {
         width: 400px;
         height: 300px;
     }
+
     .green_text2 {
         line-height: 40px;
     }
@@ -911,6 +928,10 @@ main>* {
     #green_bgsize #green_bgsize2,
     #green_bgsize3 {
         background-image: none;
+    }
+
+    .green_main h1 {
+        font-size: 28px;
     }
 }
 
@@ -1048,11 +1069,28 @@ main>* {
         margin-left: 5%;
     }
 }
-.title_box{
+
+.title_box {
     margin-top: 2%;
 }
 
 /* 輪播尺寸 */
 .list_item span {
     color: #000000;
+}
+
+/* top按鈕 */
+#gotop {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background: #007F1C;
+    font-size: 1.5rem;
+    color: #FFFF;
+    line-height: 40px;
+    text-align: center;
 }

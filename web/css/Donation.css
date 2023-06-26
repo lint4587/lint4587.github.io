@@ -149,21 +149,31 @@ a {
     width: 100%;
     top: 0;
     left: 0;
-    background-color: #164101;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     z-index: 999;
 
 }
 
-.logo {
+#topbar nav {
+    position: relative;
+    background-color: #164101;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 997;
+    transition: transform 0.6s;
+}
+
+#topbar .logo {
+    position: relative;
     display: flex;
     justify-content: center;
+    background-color: #164101;
+    z-index: 998;
 }
 
 #topbar .menu {
     display: flex;
     justify-content: center;
     align-items: center;
+
 
 }
 
@@ -198,6 +208,10 @@ a {
     background-color: #8db891;
 }
 
+.fixed {
+    transform: translateY(0px) !important;
+}
+
 /* 背景 */
 .spread_img {
     background-image: url('../img/spread.svg');
@@ -222,7 +236,7 @@ a {
     max-width: 1300px;
     height: 700px;
     margin-right: auto;
-    margin-left: auto; 
+    margin-left: auto;
 }
 
 #dona_top .mid_title {
@@ -270,7 +284,7 @@ a {
 
 #dona_top .dona_content_img {
     display: flex;
-    width: 100%; 
+    width: 100%;
 }
 
 #dona_top .dona_content {
@@ -307,7 +321,7 @@ a {
     opacity: 0;
 }
 
-.scroll_animation{
+.scroll_animation {
     animation: float1 1s ease-out both;
 }
 
@@ -342,12 +356,13 @@ a {
     height: 250px;
 }
 
-@keyframes float1{
-    from{
+@keyframes float1 {
+    from {
         transform: translateY(150px);
         opacity: 0;
     }
-    to{
+
+    to {
         transform: translateY(0px);
         opacity: 1;
     }
@@ -593,6 +608,7 @@ a {
     #dona_top .dona_content {
         margin: 0 20px;
     }
+
     #dona_top .content_title {
         margin-bottom: 10px;
     }
